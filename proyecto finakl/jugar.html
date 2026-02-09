@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="jugar.css">
+</head>
+<body>
+    <div class="game">
+  <div class="player opponent">
+    <h2>Oponente</h2>
+    <div class="life">Vida: <span id="enemyLife">10</span></div>
+    <div id="EnemyBattlefield">
+      <div class="cardcreature"></div>
+    </div>
+  </div>
+
+  <div class="player you">
+    <h2>Tú</h2>
+    <div class="life">Vida: <span id="playerLife">10</span></div>
+    <div id="PlayerBattlefield">
+      <div class="cardcreature"></div>
+    </div>
+  </div>
+
+  <button id="attackBtn">Atacar</button>
+  <button id="robarBtn" onclick="robarCarta()">Robar</button>
+  <button id="embarajar" onclick="embarajar(deckPlayer)">embarajar</button>
+  <button id="NoBloqueo">No bloquear</button>
+  <button id="pasar" onclick="updateTurn()">pasar</button>
+  <div id="mano"></div>
+</div>
+<script src="jugar.js"></script>
+</body>
+</html>

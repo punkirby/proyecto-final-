@@ -1,0 +1,126 @@
+body {
+    font-family: 'Beleren', 'Garamond', serif;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+button {
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #444;
+    border-color: #888;
+}
+
+#mano {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.carta {
+    width: 120px;
+    height: 180px;
+    background-color: #fff8dc;
+    color: #000;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carta:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+}
+
+#PlayerBattlefield, #EnemyBattlefield {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.8);
+}
+
+#PlayerBattlefield .cardcreature div,
+#EnemyBattlefield .cardcreature div {
+    width: 100px;
+    height: 150px;
+    background-color: #fafafa;
+    color: #000;
+    border: 2px solid #222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#PlayerBattlefield .cardcreature div:hover,
+#EnemyBattlefield .cardcreature div:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+}
+
+#playerLife, #enemyLife {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.alert {
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    border: 1px solid #888;
+    padding: 8px;
+    margin: 5px auto;
+    border-radius: 6px;
+    max-width: 400px;
+    text-align: center;
+}
+
+#NoBloqueo {
+    background-color: #8b0000;
+    border-color: #ff0000;
+}
+
+#NoBloqueo:hover {
+    background-color: #a00000;
+    border-color: #ff4444;
+}
