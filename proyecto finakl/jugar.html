@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cartas</title>
+    <link rel="stylesheet" href="jugar.css">
+</head>
+<body>
+  <div id="left-column">
+  <div class="game">
+    <div class="player opponent">
+      <h2>Oponente</h2>
+      <div class="life">Vida: <span id="enemyLife">20</span></div>
+      <div id="EnemyBattlefield"><div class="cardcreature"></div></div>
+    </div>
+    
+    <div class="buttons">
+      <button id="attackBtn">Atacar</button>
+      <button id="robarBtn" onclick="robarCarta()">Robar</button>
+      <button id="embarajar" onclick="embarajar(deckPlayer)">Embarajar</button>
+      <button id="NoBloqueo">No bloquear</button>
+      <button id="pasar" onclick="updateTurn()">Pasar</button>
+    </div>
+    <div class="playeryou">
+      <h2>Tú</h2>
+      <div class="life">Vida: <span id="playerLife">20</span></div>
+      <div id="PlayerBattlefield"><div class="cardcreature"></div></div>
+    </div>
+
+    <div id="mano"></div>
+
+  </div>
+</div>
+
+  
+  <div id="right-column">
+    <div id="log">
+      <div class="log-line">La partida comienza.</div>
+    </div>
+  </div>
+<div id="preview"></div>
+  <script src="jugar.js"></script>
+</body>
+</html>
